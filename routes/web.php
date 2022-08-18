@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
 Route::get('/', 'AdminController@index');
 Route::get('/usuarios','UsersController@index');
-Route::get('/proyectos', function(){return view('proyectos');});
+Route::get('/proyectos','ProyectosController@index');
 Route::get('/nosotros', function(){return view('nosotros');});
 Route::get('/perfil', function(){return view('perfil');});
 Route::get('/login', function(){return view('login');});
